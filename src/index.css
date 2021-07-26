@@ -39,3 +39,7 @@ input {
 div#root {
   overflow-x: hidden;
 }
+
+code {
+  @apply bg-gray-700;
+}

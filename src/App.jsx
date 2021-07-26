@@ -77,8 +77,13 @@ function App() {
       >
         <div className="input-group">
           <label htmlFor="fromUrls">
-            From URLs (Separate using comma <code>,</code>)
+            Filter for specific websites (Separate using comma <code>,</code>)
           </label>
+          <span>
+            Example: <code>https://nfx.com,firstround.com</code>
+            <br />
+            Note: http/s is optional
+          </span>
           <input id="fromUrls" />
         </div>
         <div className="input-group">
@@ -108,7 +113,7 @@ function App() {
           <label htmlFor="dateBefore">Date BEFORE</label>
           <span>
             Format: YYYY-MM-DD. <br />
-            For example: 2000-03-28
+            Example: <code>2000-03-28</code>
           </span>
           <input id="dateBefore" />
         </div>
@@ -116,7 +121,7 @@ function App() {
           <label htmlFor="dateAfter">Date AFTER</label>
           <span>
             Format: YYYY-MM-DD. <br />
-            For example: 2000-03-28
+            Example: <code>2000-03-28</code>
           </span>
           <input id="dateAfter" />
         </div>
