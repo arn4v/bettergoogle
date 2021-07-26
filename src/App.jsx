@@ -88,13 +88,13 @@ function App() {
         </div>
         <div className="input-group">
           <label htmlFor="exactTerms">
-            Exact terms (Separate using comma <code>,</code>)
+            Search for these exact terms (Separate using comma <code>,</code>)
           </label>
           <input id="exactTerms" />
         </div>
         <div className="input-group">
           <label htmlFor="exactTermsOr">
-            Exact terms (OR) - One or the other term - (Separate using comma{" "}
+            Search for one of these exact terms (OR) - (Separate using comma{" "}
             <code>,</code>)
           </label>
           <input id="exactTermsOr" />
@@ -105,12 +105,14 @@ function App() {
         </div>
         <div className="input-group">
           <label>
-            In URL (Separate using comma <code>,</code>)
+            Search for text in URL (Separate using comma <code>,</code>)
           </label>
           <input id="inUrl" />
         </div>
         <div className="input-group">
-          <label htmlFor="dateBefore">Date BEFORE</label>
+          <label htmlFor="dateBefore">
+            Search for results added before date
+          </label>
           <span>
             Format: YYYY-MM-DD. <br />
             Example: <code>2000-03-28</code>
@@ -118,7 +120,7 @@ function App() {
           <input id="dateBefore" />
         </div>
         <div className="input-group">
-          <label htmlFor="dateAfter">Date AFTER</label>
+          <label htmlFor="dateAfter">Search for results added after date</label>
           <span>
             Format: YYYY-MM-DD. <br />
             Example: <code>2000-03-28</code>
