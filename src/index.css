@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.input-group {
+  @apply flex flex-col gap-2 text-white;
+}
+
+.input-group > label {
+  @apply font-bold;
+}
+
+.input-group > span {
+}
+
+.input-group > input {
+  @apply rounded;
+}
+
+button.form-button {
+  @apply px-4 py-1 font-bold bg-gray-800 border border-gray-600 text-white rounded-md;
+}
+
+input {
+  @apply px-2 py-1 lg:px-4 lg:py-2 bg-gray-800 border border-gray-600 focus:outline-none focus:bg-gray-700;
+}
+
+div#root {
+  overflow-x: hidden;
+}
