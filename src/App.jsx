@@ -76,38 +76,31 @@ function App() {
         onSubmit={onSubmit}
       >
         <div className="input-group">
-          <label htmlFor="fromUrls">
-            Filter for specific websites (Separate using comma <code>,</code>)
-          </label>
+          <label htmlFor="fromUrls">Filter for specific websites</label>
           <span>
             Example: <code>https://nfx.com,firstround.com</code>
             <br />
             Note: http/s is optional
           </span>
-          <input id="fromUrls" />
+          <input id="fromUrls" placeholder="Separate using comma (,)" />
         </div>
         <div className="input-group">
-          <label htmlFor="exactTerms">
-            Search for these exact terms (Separate using comma <code>,</code>)
-          </label>
-          <input id="exactTerms" />
+          <label htmlFor="exactTerms">Search for these exact terms</label>
+          <input id="exactTerms" placeholder="Separate using comma (,)" />
         </div>
         <div className="input-group">
           <label htmlFor="exactTermsOr">
-            Search for one of these exact terms (OR) - (Separate using comma{" "}
-            <code>,</code>)
+            Search for one of these exact terms (OR)
           </label>
-          <input id="exactTermsOr" />
+          <input id="exactTermsOr" placeholder="Separate using comma (,)" />
         </div>
         <div className="input-group">
           <label htmlFor="allInTitle">All In Title</label>
           <input id="allInTitle" />
         </div>
         <div className="input-group">
-          <label>
-            Search for text in URL (Separate using comma <code>,</code>)
-          </label>
-          <input id="inUrl" />
+          <label>Search for text in URL</label>
+          <input id="inUrl" placeholder="Separate using comma (,)" />
         </div>
         <div className="input-group">
           <label htmlFor="dateBefore">
